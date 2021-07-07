@@ -1,5 +1,6 @@
 import React from "react";
 
+// @ts-ignore: Unreachable code error
 import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import MUIAppBar from "@material-ui/core/AppBar";
@@ -13,8 +14,8 @@ type position =
   | "sticky"
   | undefined;
 
-const AppBar = ({ children, position = "fixed" as position }) => {
-  const useStyles = makeStyles((theme) => ({
+const AppBar = ({ children, position = "fixed" as position }: any) => {
+  const useStyles = makeStyles((theme: any) => ({
     toolBar: {
       background: "none",
       backdropFilter: "blur(16px)",
